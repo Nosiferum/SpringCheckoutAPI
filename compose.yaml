@@ -42,3 +42,5 @@ volumes:
 networks:
   checkoutnetwork:
     driver: bridge
+
+name: spring_checkout_api
