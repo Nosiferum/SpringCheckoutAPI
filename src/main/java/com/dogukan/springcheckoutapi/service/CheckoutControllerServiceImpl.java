@@ -9,11 +9,13 @@ import com.dogukan.springcheckoutapi.error.BadRequestException;
 import com.dogukan.springcheckoutapi.promotion.CategoryPromotion;
 import com.dogukan.springcheckoutapi.promotion.SameSellerPromotion;
 import com.dogukan.springcheckoutapi.promotion.TotalPricePromotion;
+import org.springframework.stereotype.Service;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.NoSuchElementException;
 
+@Service
 public class CheckoutControllerServiceImpl implements CheckoutControllerService {
     private final int PERSISTENT_CART_ID = 1;
     private final int MAXIMUM_ITEM_IN_CART = 30;
