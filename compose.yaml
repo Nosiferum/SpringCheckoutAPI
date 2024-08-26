@@ -5,6 +5,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    image: checkout-api:latest
     ports:
       - "8080:8080"
     environment:
@@ -43,4 +44,4 @@ networks:
   checkoutnetwork:
     driver: bridge
 
-name: spring_checkout_api
+name: spring-checkout
